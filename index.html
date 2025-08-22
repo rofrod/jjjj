@@ -14,15 +14,15 @@
       <ul>
         <li><a href="logo">DIMAS<span>a</span></a></li>
       </ul>
-      <ul class="container-nav">
-        <li><a href="home" id="home">Home</a></li>
-        <li><a href="#" id="about">About Me</a></li>
-        <li><a href="#" id="project">Project</a></li>
-        <li><a href="#" id="contact me">Contact Me</a></li>
-      </ul>
+      <div class="container-nav">
+        <button onclick="showSection('sec1')">Home</button>
+        <button onclick="showSection('sec1')">About me</button>
+        <button onclick="showSection('sec1')">Project</button>
+        <button onclick="showSection('sec1')">Contact</button>
+      </div>
     </nav>
   </header>
-  <section id="home" class="home">
+  <section id="sec1" class="section active">
     <div class="welcome-text">
       <h1>
         Hai, saya Dimas
@@ -34,12 +34,26 @@
         selamat datang, terima kasih sudah berlabuh
       </p>
     </div>
+    
     <div class="wave-decor">
       <svg viewBox="0 0 1440 320">
         <path fill="#7CF5FF" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,144C672,128,768,96,864,101.3C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
       </svg>
-    </div>
-
   </section>
+  <section id="sec2" class="section">
+    <div id="about" class="profil-card">
+      <div class="inner">
+        <div class="front">Depan</div>
+        <div class="back">belakang</div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => { sec.classList.remove('active');});
+      document.getElementById(id).classList.add('active';)
+    }
+  </script>
 </body>
 </html>
