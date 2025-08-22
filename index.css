@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(ishan-seefromthesky-BMJWpck6eQA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 2px black);
+    font-size: 16px;
+}
+
+nav {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+    background-color: rgb(255, 255, 255, 10%);
+    backdrop-filter: blur(5px) drop;
+}
+
+.container-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.container-nav li a {
+    color: white;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    text-align: center;
+    top: 10vh;
+    height: 100vh;
+
+}
+
+.home h1 {
+    font-size: 6em;
+    color: antiquewhite;
+    font-family: "quicksand";
+}
+
+.home p {
+    font-family: "roboto";
+    font-size: 1.5em;
+    font-weight: 450;
+    color: #E0C097;
+    text-shadow: 1px 1px #555452;
+}
